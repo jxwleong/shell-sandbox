@@ -17,4 +17,15 @@ foo() {
   echo "TAIL: $TAIL"
 }
 
+return_0() {
+ return 0
+}
+
 foo -f -t aaa
+
+if  return_0 ;
+then
+  echo 0
+else
+  echo 1
+fi
